@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <main class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center my-16">
+            <h1 class="text-3xl font-semibold">Do you want to be my Valentine?</h1>
+            <div class="w-64 h-64">
+                <img id="fastImg" class="w-64 " src="no/img_7.gif" alt="img">
+            </div>
+        </div>
+        <div>
+            <button class="border w-20 h-10 rounded-md mr-3 bg-green-300">Yes</button>
+            <button onclick="sayNo()" id="no" class="border w-20 h-10 rounded-md bg-red-300">No</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
+
 </html>
