@@ -10,16 +10,26 @@
 </head>
 
 <body>
-    <main class="flex flex-col justify-center items-center">
-        <div class="flex flex-col justify-center items-center my-16">
-            <h1 class="text-3xl font-semibold">Do you want to be my Valentine?</h1>
-            <div class="w-64 h-64">
-                <img id="fastImg" class="w-64 " src="no/img_7.gif" alt="img">
+    <main class="flex flex-col justify-center items-center h-screen overflow-hidden">
+        <div id="sayNoContainer" class="flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center ">
+                <h1 class="text-3xl font-semibold">Do you want to be my Valentine?</h1>
+                <div class="w-64 h-64">
+                    <img id="fastImg" class="w-64 " src="no/img_7.gif" alt="img">
+                </div>
+            </div>
+            <div>
+                <button onclick="sayYes()" id="yes" class="border rounded-md mr-3 bg-green-300 py-2 px-5">Yes</button>
+                <button onclick="sayNo()" id="no" class="border rounded-md bg-red-300 py-2 px-5">No</button>
             </div>
         </div>
-        <div>
-            <button class="border w-20 h-10 rounded-md mr-3 bg-green-300">Yes</button>
-            <button onclick="sayNo()" id="no" class="border w-20 h-10 rounded-md bg-red-300">No</button>
+        <div id="sayYesContainer" class="hidden">
+            <div class="flex flex-col justify-center items-center ">
+                <h1 class="text-3xl font-semibold">I always knew you would say yes</h1>
+                <div class="w-64 h-64">
+                    <img id="secondImg" class="w-64 " src="" alt="img">
+                </div>
+            </div>
         </div>
     </main>
     <script src="index.js"></script>
