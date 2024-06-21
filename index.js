@@ -11,64 +11,114 @@ let fontSize = 1
 function sayNo() {
     let displayImage = document.getElementById('fastImg')
 
-    if (displayImage.src.match('no/img_7.gif') || no.innerText == 'No') {
+    if (displayImage.src.match('no/img_7.gif')) {
 
         displayImage.src = 'no/img_1.gif'
-        no.textContent = 'Oh no! are you sure?'
-
-    } else if (displayImage.src.match('no/img_1.gif') || no.innerText == 'Oh no! are you sure?') {
+        
+    } else if (displayImage.src.match('no/img_1.gif')) {
 
         displayImage.src = 'no/img_2.gif'
-        no.textContent = 'Are you really sure?'
-
-    } else if (displayImage.src.match('no/img_2.gif') || no.innerText == 'Are you really sure?') {
+        
+    } else if (displayImage.src.match('no/img_2.gif')) {
 
 
         displayImage.src = 'no/img_3.gif'
-        no.textContent = 'Are you really sure, huh?'
-
-    } else if (displayImage.src.match('no/img_3.gif') || no.innerText == 'Are you really sure, huh?') {
+        
+    } else if (displayImage.src.match('no/img_3.gif')) {
 
         displayImage.src = 'no/img_4.gif'
-        no.textContent = 'Are you positive?'
-
-    } else if (displayImage.src.match('no/img_4.gif') || no.innerText == 'Are you positive?') {
+        
+    } else if (displayImage.src.match('no/img_4.gif')) {
 
         displayImage.src = 'no/img_5.gif'
-        no.textContent = 'Say yes, please.'
-
-    } else if (displayImage.src.match('no/img_5.gif') || no.innerText == 'Say yes, please.') {
+        
+    } else if (displayImage.src.match('no/img_5.gif')) {
 
         displayImage.src = 'no/img_6.gif'
-        no.textContent = 'Just think about it'
-
-    } else if (displayImage.src.match('no/img_6.gif') || no.innerText == 'Just think about it') {
+        
+    } else if (displayImage.src.match('no/img_6.gif')) {
 
         displayImage.src = 'no/img_8.gif'
-        no.textContent = 'I will be very sad'
-
-    } else if (displayImage.src.match('no/img_8.gif') || no.innerText == 'I will be very sad') {
+        
+    } else if (displayImage.src.match('no/img_8.gif')) {
 
         displayImage.src = 'no/img_9.gif'
-        no.textContent = "Okay, I'll stop asking..."
-
-    } else if (displayImage.src.match('no/img_9.gif') || no.innerText == "Okay, I'll stop asking...") {
+        
+    } else if (displayImage.src.match('no/img_9.gif')) {
 
         displayImage.src = 'no/img_10.gif'
-        no.textContent = 'Just kidding, PLEASE SAY YES'
-
-    } else if (displayImage.src.match('no/img_10.gif') || no.innerText == 'Just kidding, PLEASE SAY YES') {
+        
+    } else if (displayImage.src.match('no/img_10.gif')) {
 
         displayImage.src = 'no/img_11.gif'
-        no.textContent = 'You are breaking my heart :('
-
-    } else if (displayImage.src.match('no/img_11.gif') || no.innerText == 'You are breaking my heart :(') {
+        
+    } else if (displayImage.src.match('no/img_11.gif')) {
 
         displayImage.src = 'no/img_12.gif'
+        
+    } else {
+        displayImage.src = 'no/img_7.gif'
+    } 
+
+    
+    if ( no.innerText == 'No') {
+
+
+        no.textContent = 'Oh no! are you sure?'
+
+    } else if ( no.innerText == 'Oh no! are you sure?') {
+
+
+        no.textContent = 'Are you really sure?'
+
+    } else if ( no.innerText == 'Are you really sure?') {
+
+
+
+        no.textContent = 'Are you really sure, huh?'
+
+    } else if ( no.innerText == 'Are you really sure, huh?') {
+
+
+        no.textContent = 'Are you positive?'
+
+    } else if ( no.innerText == 'Are you positive?') {
+
+
+        no.textContent = 'Say yes, please.'
+
+    } else if ( no.innerText == 'Say yes, please.') {
+
+
+        no.textContent = 'Just think about it'
+
+    } else if ( no.innerText == 'Just think about it') {
+
+
+        no.textContent = 'I will be very sad'
+
+    } else if ( no.innerText == 'I will be very sad') {
+
+
+        no.textContent = "Okay, I'll stop asking..."
+
+    } else if ( no.innerText == "Okay, I'll stop asking...") {
+
+
+        no.textContent = 'Just kidding, PLEASE SAY YES'
+
+    } else if ( no.innerText == 'Just kidding, PLEASE SAY YES') {
+
+
+        no.textContent = 'You are breaking my heart :('
+
+    } else if ( no.innerText == 'You are breaking my heart :(') {
+
+
         no.textContent = 'NO... I already said yes'
 
     } else {
-        displayImage.src = 'no/img_7.gif'
+
         no.textContent = 'No'
     }
 
